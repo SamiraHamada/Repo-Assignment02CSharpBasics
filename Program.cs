@@ -86,6 +86,18 @@ namespace Assignment02_C_Basics
             else
             {
                 Console.WriteLine("Short Book");
+            }
+            #endregion
+
+            #region 9th Question
+            //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+            //greater than 300 and isAvailable is true.Use the && operator.
+            int page = 464;
+            bool isAvailable = true;
+
+            if (page > 300 && isAvailable) // must two conditions are true to execute the statement
+            {
+                Console.WriteLine("You can borrow this book");
             } 
             #endregion
         }
