@@ -39,7 +39,20 @@ namespace Assignment02_C_Basics
 
             Console.WriteLine(sb); //stringbuilder is mutable and can modify the same object in heap but string is immutable 
             #endregion
-          
+
+            #region 4th Question
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            StringBuilder Sbuilder = new StringBuilder();
+
+            Sbuilder.Append("Book List");
+            Sbuilder.Append(" - Updated");
+
+            Sbuilder.Replace("Book List", "Library");
+
+            Console.WriteLine(Sbuilder);
+
+            #endregion
 
         }
     }
