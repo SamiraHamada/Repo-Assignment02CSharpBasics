@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Drawing;
+using System.Security.Cryptography;
 using System.Threading.Channels;
 
 namespace Assignment02_C_Basics
@@ -17,6 +18,14 @@ namespace Assignment02_C_Basics
             Console.WriteLine(title); //title did not change because string is immutable and original string is not changed
             Console.WriteLine(upperTitle);
 
+            #endregion
+
+            #region 2nd Question
+            //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
+            //to check if they point to the same object in memory.
+            string title01 = "Clean Code";
+            string title02 = "Clean Code";
+            Console.WriteLine(object.ReferenceEquals(title01, title02)); //the output is true because two variables point to the same object in heap
             #endregion
 
         }
