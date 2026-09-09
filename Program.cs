@@ -143,6 +143,19 @@ namespace Assignment02_C_Basics
             }
             #endregion
 
+            #region 13th Question
+            //Using the same books array, use a while loop to print every book title.
+            string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            int index = 0;
+
+            while (index < Books.Length) // when the condition is false the loop will stop executing and exit the loop
+            {
+                Console.WriteLine(Books[index]);
+                index++;
+            } 
+            #endregion
+
 
 
         }
