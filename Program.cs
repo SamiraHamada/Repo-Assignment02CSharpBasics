@@ -190,8 +190,22 @@ namespace Assignment02_C_Basics
                 {
                     break; // break exits the loop completely when the condition is true a
                 }
-            } 
+            }
             #endregion
+
+            #region 17th Question
+            //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+           // continue, don't stop the loop).
+            foreach (string book in books)
+            {
+                if (book == "The Pragmatic Programmer")
+                {
+                    continue; // continue skips the current iteration and moves to the next iteration when the condition is true
+                }
+
+                Console.WriteLine(book); 
+            #endregion
+            }
         }
     }
 }
