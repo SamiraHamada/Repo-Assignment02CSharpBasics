@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
@@ -7,6 +8,15 @@ namespace Assignment02_C_Basics
 {
     internal class Program
     {
+        static void PrintFirstBook(string[] thebooks)
+        {
+            if (thebooks.Length == 0)
+            {
+                return;
+            }
+
+            Console.WriteLine(thebooks[0]);
+        }
         static void Main(string[] args)
         {
             #region 1st Question
@@ -190,6 +200,7 @@ namespace Assignment02_C_Basics
                 {
                     break; // break exits the loop completely when the condition is true a
                 }
+
             }
             #endregion
 
@@ -204,8 +215,20 @@ namespace Assignment02_C_Basics
                 }
 
                 Console.WriteLine(book); 
-            #endregion
+           
             }
+            #endregion
+
+            #region 18th Question
+            //Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+            //use return to exit the method early instead of printing anything.
+
+            string[] thebooks = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+            PrintFirstBook(thebooks); 
+            #endregion
+
         }
+
     }
 }
