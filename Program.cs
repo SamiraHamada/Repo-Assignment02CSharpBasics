@@ -170,6 +170,14 @@ namespace Assignment02_C_Basics
 
             #endregion
 
+            #region 15th Question
+            //Using the same books array, use a foreach loop to print every book title.
+            foreach (string book in books) //can not modify the collection  and it is read-only
+            {
+                Console.WriteLine(book);
+            }
+
+            #endregion
         }
     }
 }
