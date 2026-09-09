@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Channels;
 
 namespace Assignment02_C_Basics
@@ -26,6 +27,17 @@ namespace Assignment02_C_Basics
             string title01 = "Clean Code";
             string title02 = "Clean Code";
             Console.WriteLine(object.ReferenceEquals(title01, title02)); //the output is true because two variables point to the same object in heap
+            #endregion
+
+            #region 3rd Question
+            //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            //object.Print the final result.
+           StringBuilder sb = new StringBuilder();
+
+            sb.Append("Book List");
+            sb.Append(" - Updated");
+
+            Console.WriteLine(sb); //stringbuilder is mutable and can modify the same object in heap but string is immutable 
             #endregion
 
         }
