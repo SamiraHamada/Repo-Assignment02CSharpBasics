@@ -11,7 +11,7 @@ namespace Assignment02_C_Basics
         {
             #region 1st Question
             //Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle. Print
-           // both title and upperTitle to show that title did not change.
+            // both title and upperTitle to show that title did not change.
             string title = "clean code";
 
             string upperTitle = title.ToUpper();
@@ -32,7 +32,7 @@ namespace Assignment02_C_Basics
             #region 3rd Question
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
             //object.Print the final result.
-           StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
 
             sb.Append("Book List");
             sb.Append(" - Updated");
@@ -56,7 +56,7 @@ namespace Assignment02_C_Basics
 
             #region 5th Question
             //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
-           //Pages: 464" using the + operator.
+            //Pages: 464" using the + operator.
             string Title = "Clean Code";
             int pages = 464;
             Console.WriteLine("Book: " + Title + ", Pages: " + pages);
@@ -130,9 +130,19 @@ namespace Assignment02_C_Basics
             string sizeLabel = price > 300 ? "Long Book" : "Short Book";
 
             Console.WriteLine(sizeLabel);
-        } 
+
             #endregion
 
-    }
+            #region 12th Question
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {books[i]}");
+            }
+            #endregion
 
+
+
+        }
+    }
 }
