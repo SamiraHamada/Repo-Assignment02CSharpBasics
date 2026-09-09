@@ -98,6 +98,27 @@ namespace Assignment02_C_Basics
             if (page > 300 && isAvailable) // must two conditions are true to execute the statement
             {
                 Console.WriteLine("You can borrow this book");
+            }
+            #endregion
+
+            #region 10th Question
+            //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+            //"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
+            string bookTitle = "Refactoring";
+
+            switch (bookTitle)
+            {
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!"); // switch enters only the case that matches the value of bookTitle and executes the statement
+                    break;// break exits the switch  after executing the correct case
+
+                default: // default case executed when no case matches the value of bookTitle
+                    Console.WriteLine("Never heard of it");
+                    break;
             } 
             #endregion
         }
