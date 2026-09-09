@@ -134,6 +134,8 @@ namespace Assignment02_C_Basics
             #endregion
 
             #region 12th Question
+            //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            //to print each book with its position number, like 1.Clean Code.
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             for (int i = 0; i < books.Length; i++)
             {
