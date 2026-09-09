@@ -59,9 +59,14 @@ namespace Assignment02_C_Basics
            //Pages: 464" using the + operator.
             string Title = "Clean Code";
             int pages = 464;
-            Console.WriteLine("Book: " + Title + ", Pages: " + pages); 
+            Console.WriteLine("Book: " + Title + ", Pages: " + pages);
             #endregion
 
+            #region 6th Question
+            //Build the same sentence as above, but using string interpolation ($"...").
+            Console.WriteLine($"Book: {Title}, Pages: {pages}");
+
+            #endregion
         }
     }
 }
