@@ -178,6 +178,20 @@ namespace Assignment02_C_Basics
             }
 
             #endregion
+
+            #region 16th Question
+            //Using the same books array, loop through it and print each title, but stop completely (break) once
+            //you reach "Refactoring".
+            foreach (string book in books)
+            {
+                Console.WriteLine(book);
+
+                if (book == "Refactoring")
+                {
+                    break; // break exits the loop completely when the condition is true a
+                }
+            } 
+            #endregion
         }
     }
 }
