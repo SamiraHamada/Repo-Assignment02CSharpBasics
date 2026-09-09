@@ -153,10 +153,22 @@ namespace Assignment02_C_Basics
             {
                 Console.WriteLine(Books[index]);
                 index++;
-            } 
+            }
             #endregion
 
+            #region 14th Question
+            //Write a do-while loop that prints "Checking book..." exactly 3 times.
+            int count = 0;
 
+            do
+            {
+                Console.WriteLine("Checking book...");// the statement will execute at least once even if the condition is false 
+                count++;
+
+            } while (count < 3); // as long as the condition is true the loop will keep executing and when the condition is false it will exit the loop
+
+
+            #endregion
 
         }
     }
