@@ -119,9 +119,19 @@ namespace Assignment02_C_Basics
                 default: // default case executed when no case matches the value of bookTitle
                     Console.WriteLine("Never heard of it");
                     break;
-            } 
+            }
             #endregion
-        }
+
+            #region 11th Question
+            //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a
+            //variable sizeLabel(same rule as question 8: long if pages > 300).
+            int price = 464;
+
+            string sizeLabel = price > 300 ? "Long Book" : "Short Book";
+
+            Console.WriteLine(sizeLabel);
+        } 
+            #endregion
 
     }
 
